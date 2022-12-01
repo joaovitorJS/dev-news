@@ -29,6 +29,7 @@ function Article() {
   }
 
   useEffect(() => {
+    window.scrollTo(0, 0);
 
     async function fetchDataArticle(path: string): Promise<string> {
       const data = await fetch(path).then(res => res.text());
@@ -56,8 +57,6 @@ function Article() {
     }
 
     initial();
-
-
 
   }, []);
 
