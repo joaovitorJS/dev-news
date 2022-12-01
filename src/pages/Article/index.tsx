@@ -58,7 +58,7 @@ function Article() {
 
     initial();
 
-  }, []);
+  }, [id]);
 
   return (
     <div className="w-full h-full text-white bg-black flex flex-col items-center">
